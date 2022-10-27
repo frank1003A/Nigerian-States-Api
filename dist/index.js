@@ -70,6 +70,8 @@ app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     let states = data_1.StateData;
     let limitedStates = [];
     const limit = Number(req.query.limit);
+    if (limit > states.length)
+        res.send(`limit is greater than ${states.length}`);
     if (!limit) {
         res.send(states);
     }

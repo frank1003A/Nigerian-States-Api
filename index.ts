@@ -11,6 +11,7 @@ const app: Express = express();
 //middlewares
 app.use(cors());
 
+//capitalize first letter of any query to fit data model
 const capitalizeStr = (str: string): string => {
   let orr_str = str;
   let new_str = ""
@@ -26,6 +27,7 @@ const capitalizeStr = (str: string): string => {
   return new_str;
 };
 
+// get lga that match query
 const getLGA = (lga: string) => {
   const states: State[] = StateData;
   let mappedLgas = states.filter((st) => {
@@ -35,10 +37,15 @@ const getLGA = (lga: string) => {
   return mappedLgas;
 };
 
+/**
+ * returns all the states, codes and LGA's
+ * /<states query>/?limit=number returns only selected number of states, codes and LGA's
+ */
 app.get("/", async (req: Request, res: Response) => {
   let states = StateData;
   let limitedStates: State[] = [];
   const limit = Number(req.query.limit);
+  if (limit > states.length) res.send(`limit is greater than ${states.length}`)
   if (!limit) {
     res.send(states);
   } else {
@@ -79,6 +86,7 @@ app.get("/state/lga", (req: Request, res: Response) => {
 });
 
 //Get specific State LGA current count 
+// /<states query>/totalLga returns the total number LGA's for a state
 app.get("/:state/totalLga", (req: Request, res: Response) => {
   const states = StateData;
   const namequery = capitalizeStr(req.params.state);
