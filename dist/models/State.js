@@ -5,9 +5,6 @@ class State {
         this.code = code;
         this.name = name;
         this.lgas = lgas;
-        this.totalLga = () => {
-            return this.lgas.length;
-        };
     }
 }
 exports.default = State;

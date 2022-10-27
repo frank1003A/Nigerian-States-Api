@@ -78,6 +78,16 @@ app.get("/state/lga", (req: Request, res: Response) => {
   }
 });
 
+//Get specific State LGA current count 
+app.get("/:state/totalLga", (req: Request, res: Response) => {
+  const states = StateData;
+  const namequery = capitalizeStr(req.params.state);
+  const returnedData = states.filter((st) => st.name === namequery);
+  res.json({
+    "Total Local Government": returnedData[0].lgas.length
+  })
+})
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`App is listening on port ${port}`));

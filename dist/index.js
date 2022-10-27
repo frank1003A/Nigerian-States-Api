@@ -49,9 +49,9 @@ const capitalizeStr = (str) => {
     let new_str = "";
     let dash = str.indexOf("-");
     let rep = orr_str.charAt(0).toUpperCase();
-    let rep_dash = orr_str.charAt(dash + 1).toUpperCase();
     //
     new_str = orr_str.replace(orr_str[0], rep);
+    let rep_dash = new_str.charAt(dash + 1).toUpperCase();
     //
     if (dash) {
         new_str = new_str.replace(new_str[dash + 1], rep_dash);
@@ -62,7 +62,6 @@ const getLGA = (lga) => {
     const states = data_1.StateData;
     let mappedLgas = states.filter((st) => {
         let capLga = capitalizeStr(lga);
-        console.log(capLga);
         return st.lgas.includes(capLga);
     });
     return mappedLgas;
@@ -94,7 +93,7 @@ app.get("/state/code", (req, res) => __awaiter(void 0, void 0, void 0, function*
     const states = data_1.StateData;
     const code = (_a = req.query.code) === null || _a === void 0 ? void 0 : _a.toString().toLocaleUpperCase();
     const returnedData = states.filter((st) => st.code === code);
-    res.send(returnedData[0]);
+    res.status(200).send(returnedData[0]);
 }));
 /**Get state by LGA */
 app.get("/state/lga", (req, res) => {
@@ -108,6 +107,15 @@ app.get("/state/lga", (req, res) => {
         const returnedData = getLGA(lga);
         res.send(returnedData);
     }
+});
+//Get specific State LGA current count 
+app.get("/:state/totalLga", (req, res) => {
+    const states = data_1.StateData;
+    const namequery = capitalizeStr(req.params.state);
+    const returnedData = states.filter((st) => st.name === namequery);
+    res.json({
+        "Total Local Government": returnedData[0].lgas.length
+    });
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`App is listening on port ${port}`));
