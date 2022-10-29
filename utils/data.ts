@@ -11,7 +11,8 @@ export const StateData: State[] = [
             "Gwagwalada",
             "Bwari",
             "Abaji"
-        ]
+        ],
+        capital: true
     },
     {
         "code": "AB",

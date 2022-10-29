@@ -12,7 +12,8 @@ exports.StateData = [
             "Gwagwalada",
             "Bwari",
             "Abaji"
-        ]
+        ],
+        capital: true
     },
     {
         "code": "AB",

@@ -9,7 +9,7 @@ dotenv.config();
 const app: Express = express();
 
 //middlewares
-app.use(cors());
+app.use(cors())
 
 //capitalize first letter of any query to fit data model
 const capitalizeStr = (str: string): string => {
@@ -96,9 +96,24 @@ app.get("/:state/totalLga", (req: Request, res: Response) => {
   })
 })
 
+app.get("/nigeria", (req: Request, res: Response) => {
+  const states = StateData;
+  let nonCapitalStates = states.filter(st => st.capital === undefined)
+  let capital = states.filter(st => st.capital === true)
+
+  //
+  let totalLga = states.reduce((acc, cur) => acc + cur.lgas.length || 0, 0)
+
+  res.json({
+    "Country": "Nigeria",
+    "No of States": `${nonCapitalStates.length} states and capital`,
+    "Capital": capital[0].name,
+    "Total Local Government": totalLga
+  })
+})
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`App is listening on port ${port}`));
-
 
 module.exports = app

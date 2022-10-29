@@ -44,6 +44,7 @@ dotenv.config();
 const app = (0, express_1.default)();
 //middlewares
 app.use((0, cors_1.default)());
+//capitalize first letter of any query to fit data model
 const capitalizeStr = (str) => {
     let orr_str = str;
     let new_str = "";
@@ -58,6 +59,7 @@ const capitalizeStr = (str) => {
     }
     return new_str;
 };
+// get lga that match query
 const getLGA = (lga) => {
     const states = data_1.StateData;
     let mappedLgas = states.filter((st) => {
@@ -66,6 +68,10 @@ const getLGA = (lga) => {
     });
     return mappedLgas;
 };
+/**
+ * returns all the states, codes and LGA's
+ * /<states query>/?limit=number returns only selected number of states, codes and LGA's
+ */
 app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     let states = data_1.StateData;
     let limitedStates = [];
@@ -111,6 +117,7 @@ app.get("/state/lga", (req, res) => {
     }
 });
 //Get specific State LGA current count 
+// /<states query>/totalLga returns the total number LGA's for a state
 app.get("/:state/totalLga", (req, res) => {
     const states = data_1.StateData;
     const namequery = capitalizeStr(req.params.state);
@@ -119,5 +126,19 @@ app.get("/:state/totalLga", (req, res) => {
         "Total Local Government": returnedData[0].lgas.length
     });
 });
+app.get("/nigeria", (req, res) => {
+    const states = data_1.StateData;
+    let nonCapitalStates = states.filter(st => st.capital === undefined);
+    let capital = states.filter(st => st.capital === true);
+    //
+    let totalLga = states.reduce((acc, cur) => acc + cur.lgas.length || 0, 0);
+    res.json({
+        "Country": "Nigeria",
+        "No of States": `${nonCapitalStates.length} states and capital`,
+        "Capital": capital[0].name,
+        "Total Local Government": totalLga
+    });
+});
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`App is listening on port ${port}`));
+module.exports = app;
