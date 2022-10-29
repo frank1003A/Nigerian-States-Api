@@ -21,5 +21,5 @@ It is strictly for educational purposes. Thank you for stopping by.
 - https://nigerian-states-and-lga.vercel.app/nigeria
 > returns some information for nigeria 
 
-- https://nigerian-states-and-lga.vercel.app/<statename>/totalLga
+- https://nigerian-states-and-lga.vercel.app/statename/totalLga
 > returns the total Lga in specified state
