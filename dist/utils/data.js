@@ -3,22 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.StateData = void 0;
 exports.StateData = [
     {
-        "code": "FC",
-        "name": "Abuja",
-        "lgas": [
-            "Abuja",
-            "Kwali",
-            "Kuje",
-            "Gwagwalada",
-            "Bwari",
-            "Abaji"
-        ],
-        capital: true
+        code: "FC",
+        name: "Abuja",
+        lgas: ["Abuja", "Kwali", "Kuje", "Gwagwalada", "Bwari", "Abaji"],
+        isCapital: true,
+        capital: "Abuja",
+        direction: "Northcentral",
+        description: "Abuja is the capital city of Nigeria. It is located in the center of the country and serves as the administrative, economic, and political hub of Nigeria. It is not a state, but rather a Federal Capital Territory (FCT). Abuja is located in the northcentral part of Nigeria and is bordered by Kaduna, Niger, and Nassarawa states.",
     },
     {
-        "code": "AB",
-        "name": "Abia",
-        "lgas": [
+        code: "AB",
+        name: "Abia",
+        lgas: [
             "Aba North",
             "Aba South",
             "Arochukwu",
@@ -38,13 +34,16 @@ exports.StateData = [
             "Ukwa West",
             "Ukwa East",
             "Umuahia North",
-            "Umuahia South"
-        ]
+            "Umuahia South",
+        ],
+        capital: "Umuahia",
+        direction: "Southeast",
+        description: "Abia is a state in southeastern Nigeria. It is bordered by Imo, Anambra, Ebonyi, Enugu, and Rivers states.",
     },
     {
-        "code": "AD",
-        "name": "Adamawa",
-        "lgas": [
+        code: "AD",
+        name: "Adamawa",
+        lgas: [
             "Demsa",
             "Fufore",
             "Ganye",
@@ -65,13 +64,16 @@ exports.StateData = [
             "Song",
             "Toungo",
             "Yola North",
-            "Yola South"
-        ]
+            "Yola South",
+        ],
+        capital: "Yola",
+        direction: "Northeast",
+        description: "Adamawa is a state in northeastern Nigeria. It is bordered by Cameroon to the east, Gombe and Taraba states to the south, and Bauchi and Borno states to the west.",
     },
     {
-        "code": "AK",
-        "name": "AkwaIbom",
-        "lgas": [
+        code: "AK",
+        name: "AkwaIbom",
+        lgas: [
             "Abak",
             "Eastern-Obolo",
             "Eket",
@@ -102,13 +104,16 @@ exports.StateData = [
             "Ukanafun",
             "Urue-Offong/Oruko",
             "Uruan",
-            "Uyo"
-        ]
+            "Uyo",
+        ],
+        capital: "Uyo",
+        direction: "Southeast",
+        description: "Akwa Ibom is a state in southeastern Nigeria. It is bordered by Cross River and Abia states to the west, and Rivers and Imo states to the east.",
     },
     {
-        "code": "AN",
-        "name": "Anambra",
-        "lgas": [
+        code: "AN",
+        name: "Anambra",
+        lgas: [
             "Aguata",
             "Anambra East",
             "Anambra West",
@@ -128,13 +133,16 @@ exports.StateData = [
             "Onitsha-North",
             "Onitsha-South",
             "Orumba-North",
-            "Orumba-South"
-        ]
+            "Orumba-South",
+        ],
+        capital: "Awka",
+        direction: "Southeast",
+        description: "Anambra is a state in southeastern Nigeria. It is bordered by Enugu and Abia states to the west, Delta and Rivers states to the south, and Imo state to the east.",
     },
     {
-        "code": "BA",
-        "name": "Bauchi",
-        "lgas": [
+        code: "BA",
+        name: "Bauchi",
+        lgas: [
             "Alkaleri",
             "Bauchi",
             "Bogoro",
@@ -154,13 +162,16 @@ exports.StateData = [
             "Tafawa-Balewa",
             "Toro",
             "Warji",
-            "Zaki"
-        ]
+            "Zaki",
+        ],
+        capital: "Bauchi",
+        direction: "Northeast",
+        description: "Bauchi is a state in northeastern Nigeria. It is bordered by Kaduna and Plateau states to the west, Gombe and Taraba states to the south, and Yobe and Borno states to the east.",
     },
     {
-        "code": "BY",
-        "name": "Bayelsa",
-        "lgas": [
+        code: "BY",
+        name: "Bayelsa",
+        lgas: [
             "Brass",
             "Ekeremor",
             "Kolokuma Opokuma",
@@ -168,13 +179,16 @@ exports.StateData = [
             "Ogbia",
             "Sagbama",
             "Southern-Ijaw",
-            "Yenagoa"
-        ]
+            "Yenagoa",
+        ],
+        capital: "Yenagoa",
+        direction: "Southeast",
+        description: "Bayelsa is a state in southeastern Nigeria. It is bordered by Rivers and Delta states to the west, and Akwa Ibom state to the east.",
     },
     {
-        "code": "BE",
-        "name": "Benue",
-        "lgas": [
+        code: "BE",
+        name: "Benue",
+        lgas: [
             "Ado",
             "Agatu",
             "Apa",
@@ -196,13 +210,16 @@ exports.StateData = [
             "Tarka",
             "Ukum",
             "Ushongo",
-            "Vandeikya"
-        ]
+            "Vandeikya",
+        ],
+        capital: "Makurdi",
+        direction: "Northcentral",
+        description: "Benue is a state in northcentral Nigeria. It is bordered by Nasarawa and Kogi states to the west, Taraba and Cross River states to the south, and Enugu and Anambra states to the east.",
     },
     {
-        "code": "BO",
-        "name": "Borno",
-        "lgas": [
+        code: "BO",
+        name: "Borno",
+        lgas: [
             "Abadam",
             "Askira-Uba",
             "Bama",
@@ -229,13 +246,16 @@ exports.StateData = [
             "Monguno",
             "Ngala",
             "Nganzai",
-            "Shani"
-        ]
+            "Shani",
+        ],
+        capital: "Maiduguri",
+        direction: "Northeast",
+        description: "Borno is a state in northeastern Nigeria. It is bordered by Chad and Niger to the north, Yobe and Bauchi states to the west, and Adamawa and Gombe states to the south.",
     },
     {
-        "code": "CR",
-        "name": "CrossRiver",
-        "lgas": [
+        code: "CR",
+        name: "CrossRiver",
+        lgas: [
             "Abi",
             "Akamkpa",
             "Akpabuyo",
@@ -253,13 +273,16 @@ exports.StateData = [
             "Odukpani",
             "Ogoja",
             "Yakurr",
-            "Yala"
-        ]
+            "Yala",
+        ],
+        capital: "Calabar",
+        direction: "Southeast",
+        description: "Cross River is a state in southeastern Nigeria. It is bordered by Cameroon to the east, Benue and Ebonyi states to the north, Akwa Ibom and Abia states to the west, and Rivers state to the south.",
     },
     {
-        "code": "DE",
-        "name": "Delta",
-        "lgas": [
+        code: "DE",
+        name: "Delta",
+        lgas: [
             "Aniocha North",
             "Aniocha-North",
             "Aniocha-South",
@@ -285,13 +308,16 @@ exports.StateData = [
             "Uvwie",
             "Warri South-West",
             "Warri North",
-            "Warri South"
-        ]
+            "Warri South",
+        ],
+        capital: "Asaba",
+        direction: "Southwest",
+        description: "Delta is a state in southwestern Nigeria. It is bordered by Edo, Anambra, and Rivers states to the west, and Bayelsa and Akwa Ibom states to the east.",
     },
     {
-        "code": "EB",
-        "name": "Ebonyi",
-        "lgas": [
+        code: "EB",
+        name: "Ebonyi",
+        lgas: [
             "Abakaliki",
             "Afikpo-North",
             "Afikpo South (Edda)",
@@ -303,13 +329,16 @@ exports.StateData = [
             "Ivo",
             "Izzi",
             "Ohaukwu",
-            "Onicha"
-        ]
+            "Onicha",
+        ],
+        capital: "Abakaliki",
+        direction: "Southeast",
+        description: "Ebonyi is a state in southeastern Nigeria. It is bordered by Enugu, Abia, and Cross River states to the west, and Benue state to the north.",
     },
     {
-        "code": "ED",
-        "name": "Edo",
-        "lgas": [
+        code: "ED",
+        name: "Edo",
+        lgas: [
             "Akoko Edo",
             "Egor",
             "Esan-Central",
@@ -327,13 +356,16 @@ exports.StateData = [
             "Ovia-South-West",
             "Owan East",
             "Owan-West",
-            "Uhunmwonde"
-        ]
+            "Uhunmwonde",
+        ],
+        capital: "Benin City",
+        direction: "Southwest",
+        description: "Edo is a state in southwestern Nigeria. It is bordered by Kogi and Anambra states to the north, Delta state to the east, and Ondo and Osun states to the south.",
     },
     {
-        "code": "EK",
-        "name": "Ekiti",
-        "lgas": [
+        code: "EK",
+        name: "Ekiti",
+        lgas: [
             "Ado-Ekiti",
             "Efon",
             "Ekiti-East",
@@ -349,13 +381,16 @@ exports.StateData = [
             "Irepodun Ifelodun",
             "Ise-Orun",
             "Moba",
-            "Oye"
-        ]
+            "Oye",
+        ],
+        capital: "Ado-Ekiti",
+        direction: "Southwest",
+        description: "Ekiti is a state in southwestern Nigeria. It is bordered by Osun and Kwara states to the west, Ondo state to the east, and Kogi and Oyo states to the north.",
     },
     {
-        "code": "EN",
-        "name": "Enugu",
-        "lgas": [
+        code: "EN",
+        name: "Enugu",
+        lgas: [
             "Aninri",
             "Awgu",
             "Enugu-East",
@@ -372,13 +407,16 @@ exports.StateData = [
             "Oji-River",
             "Udenu",
             "Udi",
-            "Uzo-Uwani"
-        ]
+            "Uzo-Uwani",
+        ],
+        capital: "Enugu",
+        direction: "Southeast",
+        description: "Enugu is a state in southeastern Nigeria. It is bordered by Abia and Imo states to the west, Ebonyi state to the east, and Benue state to the north.",
     },
     {
-        "code": "GO",
-        "name": "Gombe",
-        "lgas": [
+        code: "GO",
+        name: "Gombe",
+        lgas: [
             "Akko",
             "Balanga",
             "Billiri",
@@ -389,13 +427,16 @@ exports.StateData = [
             "Kwami",
             "Nafada",
             "Shongom",
-            "Yamaltu Deba"
-        ]
+            "Yamaltu Deba",
+        ],
+        capital: "Gombe",
+        direction: "Northeast",
+        description: "Gombe is a state in northeastern Nigeria. It is bordered by Yobe state to the west, Bauchi and Adamawa states to the south, and Borno state to the east.",
     },
     {
-        "code": "IM",
-        "name": "Imo",
-        "lgas": [
+        code: "IM",
+        name: "Imo",
+        lgas: [
             "Aboh-Mbaise",
             "Ahiazu-Mbaise",
             "Ehime-Mbano",
@@ -422,13 +463,16 @@ exports.StateData = [
             "Oru-West",
             "Owerri-Municipal",
             "Owerri-North",
-            "Owerri-West"
-        ]
+            "Owerri-West",
+        ],
+        capital: "Owerri",
+        direction: "Southeast",
+        description: "Imo is a state in southeastern Nigeria. It is bordered by Abia and Anambra states to the west, and Rivers, Delta, and Akwa Ibom states to the east.",
     },
     {
-        "code": "JI",
-        "name": "Jigawa",
-        "lgas": [
+        code: "JI",
+        name: "Jigawa",
+        lgas: [
             "Auyo",
             "Babura",
             "Biriniwa",
@@ -454,13 +498,16 @@ exports.StateData = [
             "Roni",
             "Sule-Tankarkar",
             "Taura",
-            "Yankwashi"
-        ]
+            "Yankwashi",
+        ],
+        capital: "Dutse",
+        direction: "Northwest",
+        description: "Jigawa is a state in northwestern Nigeria. It is bordered by Kano and Katsina states to the west, Yobe and Bauchi states to the east, and Kebbi state to the south.",
     },
     {
-        "code": "KD",
-        "name": "Kaduna",
-        "lgas": [
+        code: "KD",
+        name: "Kaduna",
+        lgas: [
             "Birnin-Gwari",
             "Chikun",
             "Giwa",
@@ -483,13 +530,16 @@ exports.StateData = [
             "Sanga",
             "Soba",
             "Zangon-Kataf",
-            "Zaria"
-        ]
+            "Zaria",
+        ],
+        capital: "Kaduna",
+        direction: "Northwest",
+        description: "Kaduna is a state in northwestern Nigeria. It is bordered by Kebbi and Niger states to the west, Nasarawa and Plateau states to the south, and Katsina and Zamfara states to the east.",
     },
     {
-        "code": "KN",
-        "name": "Kano",
-        "lgas": [
+        code: "KN",
+        name: "Kano",
+        lgas: [
             "Ajingi",
             "Albasu",
             "Bagwai",
@@ -533,13 +583,16 @@ exports.StateData = [
             "Tudun-Wada",
             "Ungogo",
             "Warawa",
-            "Wudil"
-        ]
+            "Wudil",
+        ],
+        capital: "Kano",
+        direction: "Northwest",
+        description: "Kano is a state in northwestern Nigeria. It is bordered by Katsina state to the west, Jigawa and Kebbi states to the east, and Kaduna and Bauchi states to the south.",
     },
     {
-        "code": "KT",
-        "name": "Katsina",
-        "lgas": [
+        code: "KT",
+        name: "Katsina",
+        lgas: [
             "Bakori",
             "Batagarawa",
             "Batsari",
@@ -573,13 +626,16 @@ exports.StateData = [
             "Sabuwa",
             "Safana",
             "Sandamu",
-            "Zango"
-        ]
+            "Zango",
+        ],
+        capital: "Katsina",
+        direction: "Northwest",
+        description: "Katsina is a state in northwestern Nigeria. It is bordered by Zamfara state to the west, Kaduna and Jigawa states to the south, and Kano state to the east.",
     },
     {
-        "code": "KE",
-        "name": "Kebbi",
-        "lgas": [
+        code: "KE",
+        name: "Kebbi",
+        lgas: [
             "Aleiro",
             "Arewa-Dandi",
             "Argungu",
@@ -600,13 +656,16 @@ exports.StateData = [
             "Suru",
             "Wasagu/Danko",
             "Yauri",
-            "Zuru"
-        ]
+            "Zuru",
+        ],
+        capital: "Birnin Kebbi",
+        direction: "Northwest",
+        description: "Kebbi is a state in northwestern Nigeria. It is bordered by Niger and Sokoto states to the west, Zamfara and Katsina states to the south, and Jigawa and Kaduna states to the east.",
     },
     {
-        "code": "KO",
-        "name": "Kogi",
-        "lgas": [
+        code: "KO",
+        name: "Kogi",
+        lgas: [
             "Adavi",
             "Ajaokuta",
             "Ankpa",
@@ -627,13 +686,16 @@ exports.StateData = [
             "Omala",
             "Oyi",
             "Yagba-East",
-            "Yagba-West"
-        ]
+            "Yagba-West",
+        ],
+        capital: "Lokoja",
+        direction: "Northcentral",
+        description: "Kogi is a state in northcentral Nigeria. It is bordered by Niger and Kwara states to the west, Benue and Nasarawa states to the east, and Edo state to the south.",
     },
     {
-        "code": "KW",
-        "name": "Kwara",
-        "lgas": [
+        code: "KW",
+        name: "Kwara",
+        lgas: [
             "Asa",
             "Baruten",
             "Edu",
@@ -647,13 +709,16 @@ exports.StateData = [
             "Offa",
             "Oke-Ero",
             "Oyun",
-            "Pategi"
-        ]
+            "Pategi",
+        ],
+        capital: "Ilorin",
+        direction: "Southwest",
+        description: "Kwara is a state in southwestern Nigeria. It is bordered by Niger state to the north, Kogi and Ekiti states to the east, and Osun and Oyo states to the south.",
     },
     {
-        "code": "LA",
-        "name": "Lagos",
-        "lgas": [
+        code: "LA",
+        name: "Lagos",
+        lgas: [
             "Agege",
             "Ajeromi-Ifelodun",
             "Alimosho",
@@ -674,13 +739,16 @@ exports.StateData = [
             "Oshodi-Isolo",
             "Shomolu",
             "Surulere",
-            "Yewa-South"
-        ]
+            "Yewa-South",
+        ],
+        capital: "Ikeja",
+        direction: "Southwest",
+        description: "Lagos is a state in southwestern Nigeria. It is bordered by Ogun state to the north and east, and the Gulf of Guinea to the south.",
     },
     {
-        "code": "NA",
-        "name": "Nassarawa",
-        "lgas": [
+        code: "NA",
+        name: "Nassarawa",
+        lgas: [
             "Akwanga",
             "Awe",
             "Doma",
@@ -693,13 +761,16 @@ exports.StateData = [
             "Nasarawa-Eggon",
             "Obi",
             "Wamba",
-            "Toto"
-        ]
+            "Toto",
+        ],
+        capital: "Lafia",
+        direction: "Northcentral",
+        description: "Nasarawa is a state in northcentral Nigeria. It is bordered by Benue and Kogi states to the east, Plateau and Kaduna states to the south, and Niger state to the west.",
     },
     {
-        "code": "NI",
-        "name": "Niger",
-        "lgas": [
+        code: "NI",
+        name: "Niger",
+        lgas: [
             "Agaie",
             "Agwara",
             "Bida",
@@ -724,13 +795,16 @@ exports.StateData = [
             "Shiroro",
             "Suleja",
             "Tafa",
-            "Wushishi"
-        ]
+            "Wushishi",
+        ],
+        capital: "Minna",
+        direction: "Northwest",
+        description: "Niger is a state in northwestern Nigeria. It is bordered by Kaduna and Sokoto states to the south, Kebbi and Zamfara states to the east, and Kwara state to the west.",
     },
     {
-        "code": "OG",
-        "name": "Ogun",
-        "lgas": [
+        code: "OG",
+        name: "Ogun",
+        lgas: [
             "Abeokuta-North",
             "Abeokuta-South",
             "Ado-Odo Ota",
@@ -749,13 +823,16 @@ exports.StateData = [
             "Ogun-Waterside",
             "Remo-North",
             "Shagamu",
-            "Yewa North"
-        ]
+            "Yewa North",
+        ],
+        capital: "Abeokuta",
+        direction: "Southwest",
+        description: "Ogun is a state in southwestern Nigeria. It is bordered by Lagos state to the south, Oyo and Osun states to the north, and Ondo state to the east.",
     },
     {
-        "code": "ON",
-        "name": "Ondo",
-        "lgas": [
+        code: "ON",
+        name: "Ondo",
+        lgas: [
             "Akoko North-East",
             "Akoko North-West",
             "Akoko South-West",
@@ -773,13 +850,16 @@ exports.StateData = [
             "Ondo West",
             "Ondo-East",
             "Ose",
-            "Owo"
-        ]
+            "Owo",
+        ],
+        capital: "Akure",
+        direction: "Southwest",
+        description: "Ondo is a state in southwestern Nigeria. It is bordered by Edo and Delta states to the east, Ogun state to the south, and Ekiti and Kwara states to the north.",
     },
     {
-        "code": "OS",
-        "name": "Osun",
-        "lgas": [
+        code: "OS",
+        name: "Osun",
+        lgas: [
             "Atakumosa West",
             "Atakumosa East",
             "Ayedaade",
@@ -808,13 +888,16 @@ exports.StateData = [
             "Olorunda",
             "Oriade",
             "Orolu",
-            "Osogbo"
-        ]
+            "Osogbo",
+        ],
+        capital: "Osogbo",
+        direction: "Southwest",
+        description: "Osun is a state in southwestern Nigeria. It is bordered by Oyo and Ogun states to the east, and Kwara and Ekiti states to the north.",
     },
     {
-        "code": "OY",
-        "name": "Oyo",
-        "lgas": [
+        code: "OY",
+        name: "Oyo",
+        lgas: [
             "Afijio",
             "Akinyele",
             "Atiba",
@@ -848,13 +931,16 @@ exports.StateData = [
             "Oyo-East",
             "Saki-East",
             "Saki-West",
-            "Surulere"
-        ]
+            "Surulere",
+        ],
+        capital: "Ibadan",
+        direction: "Southwest",
+        description: "Oyo is a state in southwestern Nigeria. It is bordered by Osun and Kwara states to the west, Ogun and Lagos states to the south, and Ondo state to the east.",
     },
     {
-        "code": "PL",
-        "name": "Plateau",
-        "lgas": [
+        code: "PL",
+        name: "Plateau",
+        lgas: [
             "Barkin-Ladi",
             "Bassa",
             "Bokkos",
@@ -871,13 +957,16 @@ exports.StateData = [
             "Qua'an Pan",
             "Riyom",
             "Shendam",
-            "Wase"
-        ]
+            "Wase",
+        ],
+        capital: "Jos",
+        direction: "Northcentral",
+        description: "Plateau is a state in northcentral Nigeria. It is bordered by Kaduna and Nassarawa states to the south, Benue state to the east, and Bauchi and Taraba states to the north.",
     },
     {
-        "code": "RI",
-        "name": "Rivers",
-        "lgas": [
+        code: "RI",
+        name: "Rivers",
+        lgas: [
             "Abua Odual",
             "Ahoada-East",
             "Ahoada-West",
@@ -901,13 +990,16 @@ exports.StateData = [
             "Opobo Nkoro",
             "Oyigbo",
             "Port-Harcourt",
-            "Tai"
-        ]
+            "Tai",
+        ],
+        capital: "Port Harcourt",
+        direction: "Southeast",
+        description: "Rivers is a state in southeastern Nigeria. It is bordered by Abia and Akwa Ibom states to the west, Bayelsa state to the east, and Imo and Delta states to the south.",
     },
     {
-        "code": "SO",
-        "name": "Sokoto",
-        "lgas": [
+        code: "SO",
+        name: "Sokoto",
+        lgas: [
             "Binji",
             "Bodinga",
             "Dange-Shuni",
@@ -929,13 +1021,16 @@ exports.StateData = [
             "Tureta",
             "Wamako",
             "Wurno",
-            "Yabo"
-        ]
+            "Yabo",
+        ],
+        capital: "Sokoto",
+        direction: "Northwest",
+        description: "Sokoto is a state in northwestern Nigeria. It is bordered by Niger state to the east, Kebbi state to the south, and Zamfara state to the west.",
     },
     {
-        "code": "TA",
-        "name": "Taraba",
-        "lgas": [
+        code: "TA",
+        name: "Taraba",
+        lgas: [
             "Ardo-Kola",
             "Bali",
             "Donga",
@@ -951,13 +1046,16 @@ exports.StateData = [
             "Ussa",
             "Wukari",
             "Yorro",
-            "Zing"
-        ]
+            "Zing",
+        ],
+        capital: "Jalingo",
+        direction: "Northcentral",
+        description: "Taraba is a state in northcentral Nigeria. It is bordered by Bauchi and Gombe states to the south, Plateau state to the west, and Cameroon to the east.",
     },
     {
-        "code": "YO",
-        "name": "Yobe",
-        "lgas": [
+        code: "YO",
+        name: "Yobe",
+        lgas: [
             "Bade",
             "Bursari",
             "Damaturu",
@@ -974,13 +1072,16 @@ exports.StateData = [
             "Potiskum",
             "Tarmuwa",
             "Yunusari",
-            "Yusufari"
-        ]
+            "Yusufari",
+        ],
+        capital: "Damaturu",
+        direction: "Northeast",
+        description: "Yobe is a state in northeastern Nigeria. It is bordered by Niger and Borno states to the east, Bauchi state to the south, and Jigawa and Gombe states to the west.",
     },
     {
-        "code": "ZA",
-        "name": "Zamfara",
-        "lgas": [
+        code: "ZA",
+        name: "Zamfara",
+        lgas: [
             "Anka",
             "Bakura",
             "Birnin Magaji/Kiyaw",
@@ -996,7 +1097,10 @@ exports.StateData = [
             "Shinkafi",
             "Talata-Mafara",
             "Tsafe",
-            "Zurmi"
-        ]
-    }
+            "Zurmi",
+        ],
+        capital: "Gusau",
+        direction: "Northwest",
+        description: "Zamfara is a state in northwestern Nigeria. It is bordered by Kebbi and Sokoto states to the east, Katsina and Kaduna states to the south, and Niger state to the west.",
+    },
 ];

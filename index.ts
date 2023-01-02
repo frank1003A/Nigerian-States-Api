@@ -85,6 +85,14 @@ app.get("/state/lga", (req: Request, res: Response) => {
   }
 });
 
+/**Get state by capital */
+app.get("/state/capital", (req: Request, res: Response) => {
+  const states = StateData;
+  const capital = capitalizeStr(req.query.capital as string);
+  const returnedData = states.filter(st => st.capital === capital)
+  res.send(returnedData[0]);
+})
+
 //Get specific State LGA current count 
 // /<states query>/totalLga returns the total number LGA's for a state
 app.get("/:state/totalLga", (req: Request, res: Response) => {
@@ -96,10 +104,18 @@ app.get("/:state/totalLga", (req: Request, res: Response) => {
   })
 })
 
+//Get only states in a specific region 
+app.get("/state/region", (req: Request, res: Response) => {
+  const states = StateData;
+  const region = capitalizeStr(req.query.region as string);
+  const returnedData = states.filter((st) => st.direction === region);
+  res.send(returnedData);
+})
+
 app.get("/nigeria", (req: Request, res: Response) => {
   const states = StateData;
   let nonCapitalStates = states.filter(st => st.capital === undefined)
-  let capital = states.filter(st => st.capital === true)
+  let capital = states.filter(st => st.isCapital === true)
 
   //
   let totalLga = states.reduce((acc, cur) => acc + cur.lgas.length || 0, 0)

@@ -16,6 +16,11 @@ It is strictly for educational purposes. Thank you for stopping by.
 > code is the first and second letter of a state in caps
 * lga: returns all of a state by lga
 > https://nigerian-states-and-lga.vercel.app/state/lga/?lga=lga
+* capital: returns all of a state by capital
+> https://nigerian-states-and-lga.vercel.app/state/capital/?capital=capital
+* region: returns all state that matches region query
+> example of region query: Southeast or Southwest
+> https://nigerian-states-and-lga.vercel.app/state/capital/?capital=capital
 
 ###### Routes
 - https://nigerian-states-and-lga.vercel.app/nigeria
