@@ -108,7 +108,7 @@ app.get("/:state/totalLga", (req: Request, res: Response) => {
 app.get("/state/region", (req: Request, res: Response) => {
   const states = StateData;
   const region = capitalizeStr(req.query.region as string);
-  const returnedData = states.filter((st) => st.direction === region);
+  const returnedData: any = states.filter((st) => st.direction === region);
   res.send(returnedData);
 })
 
